@@ -1,0 +1,268 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Kanit', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.header-part1{
+    height: 40px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+   column-gap: 30px;
+   padding-inline: 30px;
+   padding-block: 5px;
+}
+
+.header-part1 img{
+    height: 100%;
+}
+.header-part1 i{
+    color: rgb(216, 213, 213);
+    
+}
+
+.header-part1 i:hover{
+    text-shadow: 0 0 2px white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top:90px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1;
+
+    transition:all 0.3s ease-in-out;
+      transition-delay: 0.5s;
+   
+}
+
+.more:hover .dropdown{
+    display: inline;
+}
+
+
+
+.header-part2{
+    height: 57px;
+    background-color: rgba(109, 105, 105, 0.5);
+/* background-color: white; */
+width: 100%;
+color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 30px;
+    /* position: fixed; */
+
+
+}
+
+.header-part2 img{
+    height: 100%;
+    /* width: 200px; */
+}
+.header-part2 #main-logo{
+    width: 200px;
+    margin-inline-end: 40px;
+}
+
+.arrow{
+   height: 100%;
+   margin-inline-start: 5px;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap:30px ;
+    
+   
+}
+
+.nav-links li{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-block: 23px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-link a:hover{
+color: red;
+}
+
+.nav-link img:hover{
+   background-image: url("./images/redarrow.png");
+}
+
+.section-1{
+    width: 100%;
+    height: 470px;
+    background-size: 100% 100%;
+    background-image: url("./images/section1-image.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    
+}
+.section1-box{
+    width: 30rem;
+    margin-inline-start: 120px;
+   text-align: center;
+   color: white;
+
+}
+.section1-box img{
+    height: 80px;
+    width: 100%;
+}
+
+.section1-box h1{
+    color: white;
+    font-size:3rem;
+    
+}
+
+.section1-box p{
+ font-size: 21px;
+ margin-bottom: 25px;
+}
+
+.section1-box a{
+
+   
+    background-color: #FF4747;
+    color: white;
+    text-decoration: none;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    border-radius: 3px;
+}
+
+.section1-box a:hover{
+    padding-block: 1.25rem;
+    padding-inline: 2.25rem;
+}
+
+
+
+/* section 2 */
+
+.section-2
+{
+    padding-inline: 15rem;
+    text-align: center;
+    padding-block: 5rem;
+   
+    
+}
+
+.section-2 h2{
+    font-size: 40px;
+    padding-block-end: 2rem;
+}
+.featured-game{
+    background-image: url("./images/jedi.jpg");
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.featured-game a{
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+.featured-game:hover {
+    background-image: linear-gradient(304deg, rgba(223,23,23,0.75) 51%, rgba(5,21,147,0.75) 100%), url("./images/jedilogo.jpg");
+
+}
+.featured-game:hover a{
+    display: block;
+}
+
+.featured-game:hover img{
+    position: relative;
+    top: -20px;
+
+}
+
+
+.games{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-block-end: 2rem;
+}
+#div1 img{
+    width: 100px;
+}
+
+
+.section-2 a{
+    margin-block: 2rem;
+    padding: 1rem 1.75rem;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    color: #212121;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-2 a:hover{
+    cursor: pointer;
+    border: 5px solid transparent;
+ 
+    outline: 2px solid #212121;
+}
+
+.section-3
+{
+    text-align: center;
+
+}
+
+.container{
+
+    width: 116px;
+    display: flex;
+    flex-direction: column;
+align-items: center;}
+
+.updates-list{
+    list-style: none;
+    
+    margin-block:3rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+
+}
+
